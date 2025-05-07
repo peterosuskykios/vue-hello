@@ -1,23 +1,32 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 
-// reactive state
-const count = ref(0)
-const rawHtml = ref('<span style="color: red">This should be red.</span>')
+import Basic1  from './components/Basic1.vue'
+import Todo  from './components/Todo.vue'
+import ChildComp  from './components/ChildComp.vue'
 
-// functions that mutate state and trigger updates
-function increment() {
-  count.value++
-}
+const msg = ref('From parent')
+const childMsg = ref('No child msg yet')
 
-// lifecycle hooks
-onMounted(() => {
-  console.log(`The initial count is ${count.value}.`)
-})
 </script>
 
 <template>
-  <button @click="increment">Count is: {{ count }}</button>
-  <p>Using text interpolation: {{ rawHtml }}</p>
-  <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+  <!-- Basic Vue stuff -->
+  <Basic1 />
+
+  <!-- TODO list -->
+  <Todo />
+
+  <!-- Send data betweend child and parent -->
+  <ChildComp @response="(msg) => childMsg = msg", :msg="msg" >Message: {{ msg }}</ChildComp>
+
+  <p> {{ childMsg }} </p>
+
 </template>
+
+
+<style>
+.done {
+  text-decoration: line-through;
+}
+</style>
