@@ -32,7 +32,7 @@ onMounted(() => {
 
 
 <template>
-    <h1>1. Basic1</h1>
+    <h1>1. Basic</h1>
     <h2>{{ message.split('').reverse().join('') }}</h2>
 
     <button @click="increment">Count is: {{ count }}</button>

@@ -1,9 +1,10 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue'
 
-import Basic1  from './components/Basic1.vue'
-import Todo  from './components/Todo.vue'
-import ChildComp  from './components/ChildComp.vue'
+import Basic  from './components/1_Basic.vue'
+import Todo  from './components/2_Todo.vue'
+import ChildComp  from './components/3_ChildComp.vue'
+import UserInput  from './components/4_UserInput.vue'
 
 const msg = ref('From parent')
 const childMsg = ref('No child msg yet')
@@ -12,7 +13,7 @@ const childMsg = ref('No child msg yet')
 
 <template>
   <!-- Basic Vue stuff -->
-  <Basic1 />
+  <Basic />
 
   <!-- TODO list -->
   <Todo />
@@ -21,6 +22,8 @@ const childMsg = ref('No child msg yet')
   <ChildComp @response="(msg) => childMsg = msg", :msg="msg" >Message: {{ msg }}</ChildComp>
 
   <p> {{ childMsg }} </p>
+
+  <UserInput />
 
 </template>
 
