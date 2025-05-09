@@ -35,14 +35,14 @@ const paginatedComponents = computed(() => {
 
 
 <template>
-  <!-- Navigačné tlačidlá -->
+  <!-- Nav buttons -->
   <div>
     <button @click="currentPage = 1">1-5 </button>
     <button @click="currentPage = 2">6-10</button>
-    <!-- pridaj ďalšie podľa potreby -->
+    <!-- add another if need -->
   </div>
 
-  <!-- Zobraz iba komponenty aktuálnej stránky -->
+  <!-- Show 5 components for screen -->
   <div>
     <component
       v-for="(component, index) in paginatedComponents"
