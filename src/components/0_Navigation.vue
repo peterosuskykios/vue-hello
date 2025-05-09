@@ -1,30 +1,31 @@
 <script setup>
 import { ref, computed } from 'vue';
 
-// Importuj všetky komponenty
+// Import all components
 import Basic from './1_Basic.vue'
 import Todo from './2_Todo.vue'
 import ChildComp from './3_ChildComp.vue'
 import UserInput from './4_UserInput.vue'
 import AttrBinding from './5_AttrBinding.vue'
 import ConditionalsLoops from './6_ConditionalsLoops.vue'
+import FormBindings from './7_FormBindings.vue'
 
-// Pole všetkých komponentov
+// Components array
 const allComponents = [
   Basic,
   Todo,
   ChildComp,
   UserInput,
   AttrBinding,
-  ConditionalsLoops
-  // pridaj ďalšie podľa potreby
+  ConditionalsLoops,
+  FormBindings
+  // add another
 ]
 
-// Aktuálna stránka
 const currentPage = ref(1)
 const perPage = 5
 
-// Výpočet komponentov pre danú stránku
+// Computed components for current page
 const paginatedComponents = computed(() => {
   const start = (currentPage.value - 1) * perPage
   const end = start + perPage
