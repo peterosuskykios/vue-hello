@@ -12,6 +12,7 @@ const pElementRef = ref(null)
 // functions that mutate state and trigger updates
 function increment() {
   count.value++
+  console.log('Count is ' + count.value)
 }
 
 function onInput(e) {

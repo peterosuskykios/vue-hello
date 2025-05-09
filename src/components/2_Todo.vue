@@ -55,7 +55,7 @@ function removeTodo(todo) {
   <ul>
     <li v-for="todo in filteredTodos" :key="todo.id">
       <input type="checkbox" v-model="todo.done">
-      {{ todo.text }}
+      <span :class="{ done: todo.done }">{{ todo.text }}</span>
       <button @click="removeTodo(todo)">X</button>
     </li>
   </ul>
@@ -70,3 +70,9 @@ function removeTodo(todo) {
   <pre v-else>{{ todoData }}</pre>
 
 </template>
+
+<style>
+.done {
+  text-decoration: line-through;
+}
+</style>
