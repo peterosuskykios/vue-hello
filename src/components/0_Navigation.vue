@@ -2,15 +2,15 @@
 import { ref, computed } from 'vue';
 
 // Import all components
-import Basic from './1_Basic.vue'
-import Todo from './2_Todo.vue'
-import ChildComp from './3_ChildComp.vue'
-import UserInput from './4_UserInput.vue'
-import AttrBinding from './5_AttrBinding.vue'
-import ConditionalsLoops from './6_ConditionalsLoops.vue'
-import FormBindings from './7_FormBindings.vue'
-import SimpleComponent from './8_SimpleCOmponent.vue'
-import MarkdownEditor from './9_MarkdownEditor.vue';
+import Basic from './01_Basic.vue'
+import Todo from './02_Todo.vue'
+import ChildComp from './03_ChildComp.vue'
+import UserInput from './04_UserInput.vue'
+import AttrBinding from './05_AttrBinding.vue'
+import ConditionalsLoops from './06_ConditionalsLoops.vue'
+import FormBindings from './07_FormBindings.vue'
+import SimpleComponent from './08_SimpleComponent.vue'
+import MarkdownEditor from './09_MarkdownEditor.vue';
 
 // Components array
 const allComponents = [
