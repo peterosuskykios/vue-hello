@@ -9,6 +9,7 @@ import UserInput from './4_UserInput.vue'
 import AttrBinding from './5_AttrBinding.vue'
 import ConditionalsLoops from './6_ConditionalsLoops.vue'
 import FormBindings from './7_FormBindings.vue'
+import SimpleComponent from './8_SimpleCOmponent.vue'
 
 // Components array
 const allComponents = [
@@ -18,7 +19,8 @@ const allComponents = [
   UserInput,
   AttrBinding,
   ConditionalsLoops,
-  FormBindings
+  FormBindings,
+  SimpleComponent
   // add another
 ]
 
