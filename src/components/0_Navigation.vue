@@ -10,6 +10,7 @@ import AttrBinding from './5_AttrBinding.vue'
 import ConditionalsLoops from './6_ConditionalsLoops.vue'
 import FormBindings from './7_FormBindings.vue'
 import SimpleComponent from './8_SimpleCOmponent.vue'
+import MarkdownEditor from './9_MarkdownEditor.vue';
 
 // Components array
 const allComponents = [
@@ -20,7 +21,8 @@ const allComponents = [
   AttrBinding,
   ConditionalsLoops,
   FormBindings,
-  SimpleComponent
+  SimpleComponent,
+  MarkdownEditor
   // add another
 ]
 
