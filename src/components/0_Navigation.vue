@@ -13,6 +13,7 @@ import SimpleComponent from './08_SimpleComponent.vue'
 import MarkdownEditor from './09_MarkdownEditor.vue';
 import FetchData from './10_FetchData.vue'
 import GridWithSort from './11_GridWIthSort.vue'
+import TreeView from './12_TreeView.vue'
 
 // Components array
 const allComponents = [
@@ -26,7 +27,8 @@ const allComponents = [
   SimpleComponent,
   MarkdownEditor,
   FetchData,
-  GridWithSort
+  GridWithSort,
+  TreeView
   // add another
 ]
 
