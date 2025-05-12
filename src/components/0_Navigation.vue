@@ -11,6 +11,7 @@ import ConditionalsLoops from './06_ConditionalsLoops.vue'
 import FormBindings from './07_FormBindings.vue'
 import SimpleComponent from './08_SimpleComponent.vue'
 import MarkdownEditor from './09_MarkdownEditor.vue';
+import FetchData from './10_FetchData.vue'
 
 // Components array
 const allComponents = [
@@ -22,7 +23,8 @@ const allComponents = [
   ConditionalsLoops,
   FormBindings,
   SimpleComponent,
-  MarkdownEditor
+  MarkdownEditor,
+  FetchData
   // add another
 ]
 
