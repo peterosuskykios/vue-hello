@@ -12,6 +12,7 @@ import FormBindings from './07_FormBindings.vue'
 import SimpleComponent from './08_SimpleComponent.vue'
 import MarkdownEditor from './09_MarkdownEditor.vue';
 import FetchData from './10_FetchData.vue'
+import GridWithSort from './11_GridWIthSort.vue'
 
 // Components array
 const allComponents = [
@@ -24,7 +25,8 @@ const allComponents = [
   FormBindings,
   SimpleComponent,
   MarkdownEditor,
-  FetchData
+  FetchData,
+  GridWithSort
   // add another
 ]
 
@@ -46,6 +48,8 @@ const paginatedComponents = computed(() => {
   <div>
     <button @click="currentPage = 1">1-5 </button>
     <button @click="currentPage = 2">6-10</button>
+    <button @click="currentPage = 3">11-15</button>
+
     <!-- add another if need -->
   </div>
 
