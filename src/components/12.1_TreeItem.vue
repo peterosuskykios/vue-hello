@@ -1,35 +1,33 @@
 <script setup>
 import { ref, computed } from 'vue'
+import TreeItem from './12.1_TreeItem.vue'
 
-const props = defineProps( {
-    model: Object
+defineOptions({ name: 'TreeItem' })
+const props = defineProps({
+  model: Object
 })
 
 const isOpen = ref(false)
 const isFolder = computed(() => {
-    return props.model.children && props.model.children.length
+  return props.model.children && props.model.children.length
 })
 
 function toggle() {
-    isOpen.value == !isOpen.value
+  isOpen.value = !isOpen.value
 }
 
 function changeType() {
-    if (!isFolder.value) {
-        props.model.children = []
-        addChild(
-        isOpen.value = true
-        )
-    }
+  if (!isFolder.value) {
+    props.model.children = []
+    addChild()
+    isOpen.value = true
+  }
 }
 
 function addChild() {
-    props.model.children.push({ name: "New stuff" })
+  props.model.children.push({ name: 'new stuff' })
 }
-
-
 </script>
-
 
 <template>
   <li>
